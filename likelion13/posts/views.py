@@ -186,7 +186,7 @@ def post_category_list(request, category_id):
     # category_id에 해당하는 단일 카테고리 조회
     category = get_object_or_404(Category, pk=category_id)
     
-    # "__"로 (중간 테이블의 category 값) == (category_id)인 post 객체를 불러옴
+    # "__"로 (중간 테이블의 category 값) == (category_id)인 post 객체를 불러옴 
     # order_by('created')로 생성일 기준으로 정렬
     post_all = Post.objects.filter(postcategory__category = category_id).order_by('created')
 
