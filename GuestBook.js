@@ -46,3 +46,13 @@ function addLetterCard(entry) {
         showModal(entry, card);
     });
 }
+
+// 모달 뿌리기
+function showModal(entry, card) {
+    const modal = document.getElementById('letter-modal');
+    document.getElementById('modal-title').textContent = entry.title;
+    document.getElementById('modal-author').textContent = `작성자: ${entry.name}`;
+    document.getElementById('modal-content').textContent = entry.content;
+    document.getElementById('modal-password').value = '';
+    modal.style.display = 'block';
+}
