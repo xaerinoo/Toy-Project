@@ -35,5 +35,29 @@
             <div id="particles-js"></div>
         </div>
     </div>
+
+    <div id="guest-book-gallery">
+        <!-- 편지들이 동적으로 추가됨 -->
+    </div>
+    
+    <!-- 모달 창 (편지를 누르면 이 창이 열려서 내용을 보여줌) -->
+    <div id="letter-modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close">&times;</span>   <!-- 모달 창을 닫는 x 버튼 -->
+            <h3 id="modal-title"></h3>
+            <p id="modal-author"></p>
+            <pre id="modal-content"></pre>
+
+            <div class="modal-actions">
+                <p id="type-write-password">비밀번호</p>
+                <input id="modal-password" type="password" placeholder="••••">
+            </div>
+            <div class="modal-actions">
+                <button id="delete-button">방명록 삭제</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/Toy-Project/GuestBook.js"></script>
 </body>
 </html>
