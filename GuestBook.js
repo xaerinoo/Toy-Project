@@ -55,4 +55,37 @@ function showModal(entry, card) {
     document.getElementById('modal-content').textContent = entry.content;
     document.getElementById('modal-password').value = '';
     modal.style.display = 'block';
+
+    // 삭제 버튼 클릭 이벤트
+    const deleteButton = document.getElementById('delete-button');
+    deleteButton.onclick = function() {
+        const inputPassword = document.getElementById('modal-password').value.trim();
+        if (inputPassword === entry.password) {
+            if (confirm('정말 삭제하시겠습니까? 🥹')) {
+                deleteEntry(card.dataset.index, card);
+                modal.style.display = 'none';
+            }
+        } else {
+            alert('비밀번호가 틀렸습니다! 😓');
+        }
+    };
 }
+
+// 방명록 삭제
+function deleteEntry(index, card) {
+    guestBookEntries.splice(parseInt(index), 1);
+    card.remove();
+    const cards = document.querySelectorAll('.letter-card');
+    cards.forEach((c, i) => c.dataset.index = i);
+}
+
+document.getElementById('modal-close').addEventListener('click', function() {
+    document.getElementById('letter-modal').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('letter-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
