@@ -1,0 +1,86 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Internal Server Error: /posts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: posts_post
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/views/decorators/http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Chaeyeon-Lee/toyproject/posts/views.py", line 43, in post_list
+    for post in post_list:
+                ^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: posts_post
+[11/Apr/2025 07:25:55] "GET /posts/ HTTP/1.1" 500 131268
+[11/Apr/2025 07:28:37] "GET /posts/ HTTP/1.1" 200 86
+[11/Apr/2025 07:45:21] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 07:45:21] "GET /posts/ HTTP/1.1" 200 210
+Watching for file changes with StatReloader
+[11/Apr/2025 08:42:15] "GET /posts/ HTTP/1.1" 200 210
+[11/Apr/2025 08:43:02] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 08:43:06] "GET /posts/ HTTP/1.1" 200 336
+Internal Server Error: /posts
+Traceback (most recent call last):
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-FnfcXmLS-py3.12/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 3.39.180.27:8000/posts/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[11/Apr/2025 08:44:17] "POST /posts HTTP/1.1" 500 68145
+[11/Apr/2025 08:44:27] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 08:44:51] "GET /posts/ HTTP/1.1" 200 462
+[11/Apr/2025 08:45:20] "DELETE /posts/3 HTTP/1.1" 200 86
+[11/Apr/2025 08:45:49] "DELETE /posts/3 HTTP/1.1" 200 74
