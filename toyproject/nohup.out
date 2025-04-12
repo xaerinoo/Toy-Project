@@ -84,3 +84,216 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [11/Apr/2025 08:44:51] "GET /posts/ HTTP/1.1" 200 462
 [11/Apr/2025 08:45:20] "DELETE /posts/3 HTTP/1.1" 200 86
 [11/Apr/2025 08:45:49] "DELETE /posts/3 HTTP/1.1" 200 74
+Watching for file changes with StatReloader
+Internal Server Error: /posts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: posts_post
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/views/decorators/http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Chaeyeon-Lee/Toy-Project/toyproject/posts/views.py", line 43, in post_list
+    for post in post_list:
+                ^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: posts_post
+[11/Apr/2025 19:30:12] "GET /posts/ HTTP/1.1" 500 131416
+Internal Server Error: /posts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: posts_post
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/views/decorators/http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Chaeyeon-Lee/Toy-Project/toyproject/posts/views.py", line 43, in post_list
+    for post in post_list:
+                ^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: posts_post
+[11/Apr/2025 19:31:28] "GET /posts/ HTTP/1.1" 500 131416
+Watching for file changes with StatReloader
+[11/Apr/2025 19:34:26] "GET /posts/ HTTP/1.1" 200 86
+[11/Apr/2025 19:35:28] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 19:35:50] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 19:36:00] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 19:36:05] "GET /posts/ HTTP/1.1" 200 462
+[11/Apr/2025 19:36:17] "DELETE /posts/1 HTTP/1.1" 200 86
+[11/Apr/2025 19:36:24] "DELETE /posts/1 HTTP/1.1" 200 74
+[11/Apr/2025 19:36:30] "GET /posts/ HTTP/1.1" 200 336
+[11/Apr/2025 19:36:58] "GET /posts/ HTTP/1.1" 200 336
+[11/Apr/2025 19:37:37] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 19:38:11] "POST /posts/ HTTP/1.1" 200 208
+[11/Apr/2025 19:38:15] "GET /posts/ HTTP/1.1" 200 588
+[11/Apr/2025 19:39:30] "GET /posts/ HTTP/1.1" 200 588
+[11/Apr/2025 19:40:12] "DELETE /posts/4 HTTP/1.1" 200 74
+[11/Apr/2025 19:40:26] "GET /posts/ HTTP/1.1" 200 462
+Watching for file changes with StatReloader
+[12/Apr/2025 04:40:11] "GET /posts/ HTTP/1.1" 200 462
+[12/Apr/2025 04:44:11] "GET /posts/ HTTP/1.1" 200 462
+[12/Apr/2025 04:44:26] "DELETE /posts/5 HTTP/1.1" 200 74
+[12/Apr/2025 04:48:09,969] - Broken pipe from ('39.118.91.170', 51965)
+[12/Apr/2025 04:48:09,969] - Broken pipe from ('39.118.91.170', 51942)
+[12/Apr/2025 04:52:12] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 07:11:29] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x01¤\x01\x00\x01')
+[12/Apr/2025 07:11:29] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[12/Apr/2025 07:11:32] "GET / HTTP/1.1" 404 2308
+[12/Apr/2025 07:21:14] "GET /posts/ HTTP/1.1" 200 336
+Not Found: /favicon.ico
+[12/Apr/2025 07:23:59] "GET /favicon.ico HTTP/1.1" 404 2359
+[12/Apr/2025 07:24:27,391] - Broken pipe from ('39.118.91.170', 52569)
+Not Found: /
+[12/Apr/2025 07:35:03] "GET / HTTP/1.1" 404 2308
+Not Found: /favicon.ico
+[12/Apr/2025 07:35:56] "GET /favicon.ico HTTP/1.1" 404 2359
+Not Found: /http:/api.ipify.org/
+[12/Apr/2025 07:36:19] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1873
+Not Found: /www.shadowserver.org:443
+[12/Apr/2025 07:36:42] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1882
+[12/Apr/2025 10:33:03] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:33:33] "DELETE /posts/2 HTTP/1.1" 200 86
+Not Found: /
+[12/Apr/2025 10:35:43] "GET / HTTP/1.1" 404 2303
+Not Found: /
+[12/Apr/2025 10:35:43] "GET / HTTP/1.1" 404 2303
+Not Found: /
+[12/Apr/2025 10:35:43] "GET / HTTP/1.1" 404 2303
+Not Found: /
+[12/Apr/2025 10:35:59] "GET / HTTP/1.1" 404 2303
+[12/Apr/2025 10:36:00] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:36:11] "GET /posts/ HTTP/1.1" 200 336
+Not Found: /
+[12/Apr/2025 10:36:25] "GET / HTTP/1.1" 404 2308
+Not Found: /
+[12/Apr/2025 10:36:33] "GET / HTTP/1.1" 404 2308
+Not Found: /favicon.ico
+[12/Apr/2025 10:36:33] "GET /favicon.ico HTTP/1.1" 404 2359
+Not Found: /
+[12/Apr/2025 10:37:03] "GET / HTTP/1.1" 404 2308
+[12/Apr/2025 10:40:06] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:40:10] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:40:17] "OPTIONS /posts/ HTTP/1.1" 200 0
+Not Found: /
+[12/Apr/2025 10:40:35] "GET / HTTP/1.1" 404 2308
+Not Found: /
+[12/Apr/2025 10:42:51] "GET / HTTP/1.1" 404 2308
+Not Found: /
+[12/Apr/2025 10:42:53] "GET / HTTP/1.1" 404 2308
+Not Found: /
+[12/Apr/2025 10:43:52] "GET / HTTP/1.1" 404 2303
+Not Found: /
+[12/Apr/2025 10:43:52] "GET / HTTP/1.1" 404 2303
+[12/Apr/2025 10:44:17] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:44:17] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:44:20] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:44:27] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 10:44:43] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:45:48] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:45:48] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:52:25] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 10:52:57] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 11:02:50] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 11:02:50] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 11:02:50] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 11:02:50] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 11:02:50] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 11:02:50] "OPTIONS /posts/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 12, 2025 - 11:33:19
+Django version 5.2, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
