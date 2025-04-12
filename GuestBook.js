@@ -3,11 +3,6 @@
 // 2. 페이지 로드시 => GET 요청으로 전체 게시글 불러오기
 // 3. 게시글 삭제 => DELETE 요청으로 서버에 삭제 요청
 
-/* 삭제
-편지 데이터를 저장할 배열
-let guestBookEntries = [];
-*/
-
 // 서버에 저장된 방명록 데이터 불러오기
 window.addEventListener('DOMContentLoaded', () => {
     fetch("http://3.39.180.27:8000/posts/")
@@ -48,6 +43,7 @@ document.getElementById('complete-button').addEventListener('click', function() 
     })
     .then(response => response.json())
     .then(data => {
+        console.log("서버 응답:", data);
         if (data.status === 200) {
             addLetterCard(data.data);
             document.getElementById('write-name').value = '';
@@ -62,17 +58,6 @@ document.getElementById('complete-button').addEventListener('click', function() 
         console.error("에러 발생:", error);
         alert("방명록 등록 중 에러가 발생했습니다.")
     });
-
-    /* 삭제
-    const entry = { name, password, title, content };
-    guestBookEntries.push(entry);
-    addLetterCard(entry);
-
-    document.getElementById('write-name').value = '';
-    document.getElementById('write-password').value = '';
-    document.getElementById('write-title').value = '';
-    document.getElementById('write-content').value = '';
-    */
 });
 
 // 편지 카드 생성
@@ -92,7 +77,6 @@ function addLetterCard(entry) {
     card.appendChild(title);
     card.appendChild(author);
     gallery.appendChild(card);
-    card.dataset.index = guestBookEntries.length - 1;
 
     card.addEventListener('click', function() {
         showModal(entry, card);
@@ -101,6 +85,7 @@ function addLetterCard(entry) {
 
 // 모달 띄우기
 function showModal(entry, card) {
+    console.log("모달 오픈 시도:", entry);
     const modal = document.getElementById('letter-modal');
     document.getElementById('modal-title').textContent = entry.title;
     document.getElementById('modal-author').textContent = `작성자: ${entry.user}`;
@@ -144,16 +129,6 @@ function showModal(entry, card) {
         }
     };
 }
-
-/*
-방명록 삭제
-function deleteEntry(index, card) {
-    guestBookEntries.splice(parseInt(index), 1);
-    card.remove();
-    const cards = document.querySelectorAll('.letter-card');
-    cards.forEach((c, i) => c.dataset.index = i);
-}
-*/
 
 // 모달 닫기
 document.getElementById('modal-close').addEventListener('click', function() {
