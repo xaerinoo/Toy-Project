@@ -1,0 +1,262 @@
+html {
+    background: rgb(181,229,254);
+    background: linear-gradient(360deg, rgba(181,229,254,1) 25%, rgba(246,252,255,1) 100%);
+    height: 100%;
+
+    /* 배경 그라디언트가 잘려서 반복되지 않게 */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gamja Flower", sans-serif;
+}
+
+/* < 방명록 부분 > */
+
+#title {
+    display: block;
+}
+
+p, input, textarea {
+    display: inline;
+    font-family: "Gamja Flower", sans-serif;
+}
+
+textarea, input {
+    border: 2px dashed lightgray; /* 테두리를 점선 스타일로 바꿈 */
+}
+
+input:focus {
+    border: 2px dashed lightgray; /* 인풋 박스가 클릭된 상태에서도 점선 테두리를 동일하게 유지 */
+    outline: none; /* 브라우저 기본 outline 제거 */
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 350px;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 25px;
+}
+
+#write-name, #write-password {
+    display: inline;
+    text-align: center;
+}
+
+#type-write-password {
+    margin-left: 10px;
+}
+
+#write-name {
+    width: 80px;
+}
+
+#write-password {
+    width: 50px
+}
+
+#write-title {
+    margin-top: 20px;
+    height: 30px;
+    font-size: large;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+#write-content {
+    margin-top: 10px;
+    height: 150px;
+}
+
+.content {
+    white-space: pre-wrap; /* 입력한 줄바꿈과 자동 줄바꿈 모두 적용 */
+    word-wrap: break-word; /* 단어가 길어도 강제로 줄바꿈 */
+}
+
+#write-title, #write-content {
+    width: 300px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#complete-button {
+    background: #4cbffd;
+    font-size: 15px;
+    color: white;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    white-space: nowrap;    /* 줄바꿈 방지 */
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,1),0px 1px 3px rgba(0,0,0,0.3);
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 18px;
+    transition: transform 0.1s;
+}
+
+#complete-button:active {
+    /* 버튼을 눌렀을 때 눌린 효과 */
+    transform: translateY(2px);
+}
+
+/* < 편지 갤러리 부분 > */
+
+.letter-card {
+    width: 300px;
+    height: 200px;
+    background: rgb(181,229,254);
+    background: linear-gradient(360deg, rgba(181,229,254,1) 5%, rgba(246,252,255,1) 100%);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+/* 봉투 뚜껑 */
+.letter-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    margin-top: 2px;
+    border-left: 90px solid transparent;
+    border-right:90px solid transparent;
+    border-top: 40px solid rgb(133, 196, 230);
+    z-index: 1; /* 카드 위에 표시 */
+}
+
+.letter-card:hover {
+    transform: scale(1.05);
+}
+
+.letter-card h3 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.letter-card p {
+    font-size: 15px;
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* 갤러리 레이아웃 => 한 줄에 3개씩 */
+#guest-book-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 1300px;
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    font-family: "Gamja Flower", sans-serif;
+}
+
+#modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#modal-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+#modal-author {
+    font-size: 14px;
+    color: #666;
+}
+
+#modal-content {
+    white-space: pre-wrap;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Gamja Flower", sans-serif;
+}
+
+#delete-button {
+    background: #ff6b6b;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 16px;
+    transition: transform 0.1s;
+}
+
+#delete-button:active {
+    transform: translateY(2px);
+}
+
+#modal-password {
+    display: inline;
+    text-align: center;
+}
+
+#modal-password {
+    width: 50px
+}
