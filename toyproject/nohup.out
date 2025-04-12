@@ -297,3 +297,128 @@ Quit the server with CONTROL-C.
 
 WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
 For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[12/Apr/2025 11:34:39] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 11:37:22] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 11:37:29] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 11:37:30] "POST /posts/ HTTP/1.1" 200 173
+[12/Apr/2025 11:37:31] "POST /posts/ HTTP/1.1" 200 173
+[12/Apr/2025 11:37:36] "GET /posts/ HTTP/1.1" 200 518
+[12/Apr/2025 11:37:37] "GET /posts/ HTTP/1.1" 200 518
+[12/Apr/2025 11:39:01] "GET /posts/ HTTP/1.1" 200 518
+[12/Apr/2025 11:39:07] "GET /posts/ HTTP/1.1" 200 518
+[12/Apr/2025 11:39:26] "OPTIONS /posts/ HTTP/1.1" 200 0
+[12/Apr/2025 11:39:27] "POST /posts/ HTTP/1.1" 200 190
+[12/Apr/2025 11:39:30] "POST /posts/ HTTP/1.1" 200 190
+[12/Apr/2025 11:39:30] "POST /posts/ HTTP/1.1" 200 191
+[12/Apr/2025 11:39:31] "POST /posts/ HTTP/1.1" 200 191
+[12/Apr/2025 11:39:31] "POST /posts/ HTTP/1.1" 200 191
+[12/Apr/2025 11:39:31] "POST /posts/ HTTP/1.1" 200 191
+[12/Apr/2025 11:39:39] "POST /posts/ HTTP/1.1" 200 191
+[12/Apr/2025 11:39:53] "GET /posts/ HTTP/1.1" 200 1279
+[12/Apr/2025 11:40:49] "POST /posts/ HTTP/1.1" 200 179
+[12/Apr/2025 11:41:22] "GET /posts/ HTTP/1.1" 200 1376
+[12/Apr/2025 11:44:19] "GET /posts/ HTTP/1.1" 200 1376
+[12/Apr/2025 11:46:29] "GET /posts/ HTTP/1.1" 200 1376
+[12/Apr/2025 11:46:30] "GET /posts/ HTTP/1.1" 200 1376
+[12/Apr/2025 11:46:36] "GET /posts/ HTTP/1.1" 200 1376
+[12/Apr/2025 11:46:44] "OPTIONS /posts/15 HTTP/1.1" 200 0
+[12/Apr/2025 11:46:45] "DELETE /posts/15 HTTP/1.1" 200 74
+[12/Apr/2025 11:46:49] "OPTIONS /posts/14 HTTP/1.1" 200 0
+[12/Apr/2025 11:46:50] "DELETE /posts/14 HTTP/1.1" 200 86
+Not Found: /robots.txt
+[12/Apr/2025 11:46:54] "GET /robots.txt HTTP/1.1" 404 2351
+[12/Apr/2025 11:46:58] "DELETE /posts/14 HTTP/1.1" 200 74
+Not Found: /
+[12/Apr/2025 11:46:58] "GET / HTTP/1.1" 404 2303
+Not Found: /
+[12/Apr/2025 11:47:04] "GET / HTTP/1.1" 404 2308
+[12/Apr/2025 11:47:30] "OPTIONS /posts/2 HTTP/1.1" 200 0
+[12/Apr/2025 11:47:30] "DELETE /posts/2 HTTP/1.1" 200 86
+[12/Apr/2025 11:47:36] "DELETE /posts/2 HTTP/1.1" 200 86
+[12/Apr/2025 11:47:40] "DELETE /posts/2 HTTP/1.1" 200 86
+[12/Apr/2025 11:48:32] "DELETE /posts/2 HTTP/1.1" 200 86
+[12/Apr/2025 11:48:39] "OPTIONS /posts/13 HTTP/1.1" 200 0
+[12/Apr/2025 11:48:40] "DELETE /posts/13 HTTP/1.1" 200 86
+[12/Apr/2025 11:48:45] "DELETE /posts/13 HTTP/1.1" 200 74
+[12/Apr/2025 11:48:49] "OPTIONS /posts/12 HTTP/1.1" 200 0
+[12/Apr/2025 11:48:50] "DELETE /posts/12 HTTP/1.1" 200 74
+[12/Apr/2025 11:48:54] "OPTIONS /posts/11 HTTP/1.1" 200 0
+[12/Apr/2025 11:48:55] "DELETE /posts/11 HTTP/1.1" 200 74
+[12/Apr/2025 11:48:59] "OPTIONS /posts/10 HTTP/1.1" 200 0
+[12/Apr/2025 11:49:00] "DELETE /posts/10 HTTP/1.1" 200 86
+[12/Apr/2025 11:49:05] "DELETE /posts/10 HTTP/1.1" 200 86
+[12/Apr/2025 11:49:10] "DELETE /posts/10 HTTP/1.1" 200 86
+[12/Apr/2025 11:49:17] "OPTIONS /posts/6 HTTP/1.1" 200 0
+[12/Apr/2025 11:49:18] "DELETE /posts/6 HTTP/1.1" 200 74
+[12/Apr/2025 11:49:22] "OPTIONS /posts/7 HTTP/1.1" 200 0
+[12/Apr/2025 11:49:23] "DELETE /posts/7 HTTP/1.1" 200 74
+[12/Apr/2025 11:49:30] "OPTIONS /posts/8 HTTP/1.1" 200 0
+[12/Apr/2025 11:49:30] "DELETE /posts/8 HTTP/1.1" 200 86
+[12/Apr/2025 11:49:38] "DELETE /posts/8 HTTP/1.1" 200 86
+[12/Apr/2025 11:49:42] "DELETE /posts/8 HTTP/1.1" 200 74
+[12/Apr/2025 11:49:48] "OPTIONS /posts/9 HTTP/1.1" 200 0
+[12/Apr/2025 11:49:49] "DELETE /posts/9 HTTP/1.1" 200 74
+[12/Apr/2025 11:49:54] "DELETE /posts/10 HTTP/1.1" 200 74
+[12/Apr/2025 11:50:01] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 11:50:01] "GET /posts/ HTTP/1.1" 200 336
+[12/Apr/2025 11:50:20] "POST /posts/ HTTP/1.1" 200 215
+[12/Apr/2025 11:50:21] "DELETE /posts/2 HTTP/1.1" 200 74
+[12/Apr/2025 11:50:27] "GET /posts/ HTTP/1.1" 200 343
+[12/Apr/2025 11:50:45] "GET /posts/ HTTP/1.1" 200 343
+[12/Apr/2025 11:50:45] "GET /posts/ HTTP/1.1" 200 343
+[12/Apr/2025 11:50:53] "OPTIONS /posts/3 HTTP/1.1" 200 0
+[12/Apr/2025 11:50:54] "DELETE /posts/3 HTTP/1.1" 200 86
+[12/Apr/2025 11:51:20] "OPTIONS /posts/16 HTTP/1.1" 200 0
+[12/Apr/2025 11:51:20] "DELETE /posts/16 HTTP/1.1" 200 74
+Method Not Allowed (GET): /posts/3
+[12/Apr/2025 11:51:27] "GET /posts/3 HTTP/1.1" 405 0
+[12/Apr/2025 11:51:30] "GET /posts/ HTTP/1.1" 200 210
+[12/Apr/2025 11:51:36] "DELETE /posts/3 HTTP/1.1" 200 74
+[12/Apr/2025 11:51:40] "GET /posts/ HTTP/1.1" 200 86
+[12/Apr/2025 11:51:53] "GET /posts/ HTTP/1.1" 200 86
+[12/Apr/2025 11:52:12] "GET /posts/ HTTP/1.1" 200 86
+[12/Apr/2025 11:52:17] "GET /posts/ HTTP/1.1" 200 86
+[12/Apr/2025 11:52:33] "POST /posts/ HTTP/1.1" 200 257
+[12/Apr/2025 11:54:48] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 11:54:51] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 11:55:02] "POST /posts/ HTTP/1.1" 200 219
+[12/Apr/2025 11:55:16] "OPTIONS /posts/18 HTTP/1.1" 200 0
+[12/Apr/2025 11:55:17] "DELETE /posts/18 HTTP/1.1" 200 74
+[12/Apr/2025 11:55:51] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 11:55:51] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 11:55:52] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 11:55:52] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 11:56:39] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 11:59:57] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:00:45] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:01:30] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:01:43] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:01:43] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:01:44] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:01:44] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:01:53] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:01:59] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:02:04] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:02:16] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:02:43] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:04:27] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:04:28] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:06:39] "POST /posts/ HTTP/1.1" 200 221
+[12/Apr/2025 12:06:49] "OPTIONS /posts/19 HTTP/1.1" 200 0
+[12/Apr/2025 12:06:50] "DELETE /posts/19 HTTP/1.1" 200 74
+[12/Apr/2025 12:07:46] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:26:11] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:26:41] "GET /posts/ HTTP/1.1" 200 259
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 12, 2025 - 12:32:30
+Django version 5.2, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[12/Apr/2025 12:32:36] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:33:15] "GET /posts/ HTTP/1.1" 200 259
