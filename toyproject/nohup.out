@@ -422,3 +422,144 @@ WARNING: This is a development server. Do not use it in a production setting. Us
 For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
 [12/Apr/2025 12:32:36] "GET /posts/ HTTP/1.1" 200 259
 [12/Apr/2025 12:33:15] "GET /posts/ HTTP/1.1" 200 259
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 12, 2025 - 12:54:39
+Django version 5.2, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[12/Apr/2025 12:55:02] "GET /posts/ HTTP/1.1" 200 259
+[12/Apr/2025 12:55:15] "DELETE /posts/17 HTTP/1.1" 200 86
+[12/Apr/2025 12:57:49] code 400, message Bad request version ('À\x14À')
+[12/Apr/2025 12:57:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Apr/2025 12:57:49] code 400, message Bad request version ('À\x14À')
+[12/Apr/2025 12:57:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[12/Apr/2025 12:57:50] "GET / HTTP/1.1" 404 2308
+Not Found: /login
+[12/Apr/2025 12:57:50] "GET /login HTTP/1.1" 404 2341
+/home/ubuntu/Chaeyeon-Lee/Toy-Project/toyproject/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/base.py", line 569, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (corsheaders.E014) Origin 'https://xaerinoo.github.io/Toy-Project' in CORS_ALLOWED_ORIGINS should not have path
+
+System check identified 1 issue (0 silenced).
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/base.py", line 569, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (corsheaders.E014) Origin 'https://xaerinoo.github.io/Toy-Project' in CORS_ALLOWED_ORIGINS should not have path
+
+System check identified 1 issue (0 silenced).
+/home/ubuntu/Chaeyeon-Lee/Toy-Project/toyproject/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/base.py", line 569, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (corsheaders.E014) Origin 'https://xaerinoo.github.io/Toy-Project' in CORS_ALLOWED_ORIGINS should not have path
+
+System check identified 1 issue (0 silenced).
+/home/ubuntu/Chaeyeon-Lee/Toy-Project/toyproject/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/base.py", line 569, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (corsheaders.E014) Origin 'https://xaerinoo.github.io/Toy-Project' in CORS_ALLOWED_ORIGINS should not have path
+
+System check identified 1 issue (0 silenced).
+/home/ubuntu/Chaeyeon-Lee/Toy-Project/toyproject/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(**check_kwargs)
+  File "/home/ubuntu/.cache/pypoetry/virtualenvs/toyproject-i2V2OP8o-py3.12/lib/python3.12/site-packages/django/core/management/base.py", line 569, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+?: (corsheaders.E014) Origin 'https://xaerinoo.github.io/Toy-Project/' in CORS_ALLOWED_ORIGINS should not have path
+
+System check identified 1 issue (0 silenced).
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 12, 2025 - 14:28:34
+Django version 5.2, using settings 'config.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
