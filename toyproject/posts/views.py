@@ -5,6 +5,7 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods 
 import json
 from django.shortcuts import get_object_or_404
+from django.utils.timezone import localtime
 
 # Create your views here.
 @require_http_methods(["POST", "GET"])
@@ -26,7 +27,7 @@ def post_list(request):
             "title": new_post.title,
             "user": new_post.user, 
             "content": new_post.content,
-            "created_at": new_post.created_at.strftime("%Y-%m-%d %H:%M:%S")
+            "created_at": localtime(new_post.created_at).strftime("%Y-%m-%d %H:%M:%S")
         }
 
         return JsonResponse({
@@ -36,7 +37,7 @@ def post_list(request):
         })
     
     if request.method == "GET": # 게시글 목록 조회(최신순 정렬)
-        post_list = Post.objects.all().order_by('created_at')  # 최신순으로 정렬
+        post_list = Post.objects.all().order_by('-created_at')  # 최신순으로 정렬
         post_list_json = []
 
         # 게시글을 하나씩씩 Json 형태로 변환
@@ -46,7 +47,7 @@ def post_list(request):
                 "title": post.title,
                 "user": post.user, 
                 "content": post.content,
-                "created_at": post.created_at.strftime("%Y-%m-%d %H:%M:%S")
+                "created_at": localtime(post.created_at).strftime("%Y-%m-%d %H:%M:%S")
             }
             post_list_json.append(post_json)
 
